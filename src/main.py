@@ -79,12 +79,4 @@ def json_lint(
 # 启动服务
 if __name__ == "__main__":
     # 从环境变量读取配置
-    transport = os.getenv("MCP_TRANSPORT", "stdio")
-    
-    if transport == "http":
-        host = os.getenv("MCP_HOST", "127.0.0.1")
-        port = int(os.getenv("MCP_PORT", "8000"))
-        app.run(transport="http", host=host, port=port)
-    else:
-        # 默认使用 stdio 传输
-        app.run(transport="stdio")
+    app.run(transport="stdio")

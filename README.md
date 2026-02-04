@@ -6,7 +6,7 @@
 
 ## 功能特性
 
-- 使用fastmcp框架
+- 使用fastmcp框架，本地运行
 - 检查 JSON 字符串的格式正确
 - 检查 JSON / ipynb 文件的格式正确性
 - 提供详细的错误信息，包括错误位置和上下文
@@ -26,16 +26,6 @@
    ```bash
    pip install -r requirements.txt
    ```
-
-4. 配置环境变量`.env`
-
-## 配置
-
-项目使用 `.env` 文件进行配置，主要配置项如下：
-
-- `MCP_TRANSPORT`：传输方式，可选值为 `stdio`（默认）或 `http`
-- `MCP_HOST`：HTTP 传输时的主机地址，默认为 `0.0.0.0`
-- `MCP_PORT`：HTTP 传输时的端口，默认为 `8000`
 
 ## 使用
 
